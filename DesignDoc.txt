@@ -1,0 +1,35 @@
+Purpose: The purpose of this program is do divide two numbers or find the square root of a number while showing the work that would be necessary to get credit in elementary school.
+
+Requirements: This program must accept the correct inputs to choose the correct function and accept only integers between 0 and 1,000,000,000
+
+Classes: NONE
+
+Global Anything: NEVER! WE'RE NOT SUPPOSED TO USE GLOBAL ANYTHING. WHY IS THIS IN THE DESIGN DOCUMENT REQUIREMENTS?
+
+High-Level Architecture: NONE
+
+UI: Text based everything. Text based menu. Text based work.
+
+Test Cases: Test every function, with different correct/incorrect inputs, and check the work shown
+
+Functions:
+	void showMenu();
+		Displays the menu. That is all.
+	void divide();
+		Divides two numbers. If any input does not follow the requirements for input, returns to menu. Otherwise, divides them and shows work.
+	int intSize(int num);
+		Returns the length of a number. My own helper function.
+	int mostSig(int num);
+		Returns the most significant digit in a number. My own helper function.
+	int pow(int base, int power);
+		Returns base ^ power. Because C++ doesn't have one of these for just ints and casting takes :effort:
+	void printGap(int num);
+		Returns num " "s. My own helper function for formatting
+	string toString(int num);
+		Converts an int to a string. My own helper function.
+	void sqrt();
+		Finds the square root of a number, assuming it follows the requirements for input. Shows work that no one should ever have learned in elementary school, yet elementary school is the only place where this work would need to be shown
+	int solve(int Q, int Z);
+		Finds the largest value of T such that T * (20 * Q + T) <= Z. For sqrt function.
+	int sigBig(int num);
+		Finds the most significant big digit in num. For sqrt function.
